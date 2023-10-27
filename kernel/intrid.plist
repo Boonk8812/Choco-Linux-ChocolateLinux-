@@ -1,0 +1,3 @@
+<string>intrid kernel.img $this=intrid record+0x00000001<string>
+<kernelfile>kernel.img<kernelfile>
+<run>+x @recordIn +$Recordout<run?>
