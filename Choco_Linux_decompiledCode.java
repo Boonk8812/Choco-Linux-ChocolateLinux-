@@ -183,8 +183,14 @@ public class PartitionBuilder {
         // Code to download the files goes here
         
         // Extract the files from the .iso file into the /boot partition
-        String isoFilePath = "/path/to/ubuntu-22.04.3-desktop-amd64.iso";
-        // Code to extract the files goes here
+        String isoFilePath = "/linux/ubuntu/basedFiles/ubuntu-22.04.3-desktop-amd64.iso";
+        //Extract the files
     }
 }
 
+#include <kernel>
+ #include <packages>
+ #include <registry>
+ #include <c92-192e92acff3-29.c>
+ #include <bootlinux.efi>
+ #include <ROM>
