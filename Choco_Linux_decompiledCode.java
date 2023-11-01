@@ -187,7 +187,11 @@ public class PartitionBuilder {
         //Extract the files
     }
 }
+
+class OtherCode(list, asString):
 {
+
+ class fun("function");
                      }
  #include <'kernel'>
  #include <'packages'>
