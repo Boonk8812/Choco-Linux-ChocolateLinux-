@@ -187,10 +187,33 @@ public class PartitionBuilder {
         //Extract the files
     }
 }
+{
+                     }
+ #include <'kernel'>
+ #include <'packages'>
+ #include <'registry'>
+ #include <'c92-192e92acff3-29.c'>
+ #include <'bootlinux.efi'>
+ #include <'ROM'>
+ #include <'cdrom.rdz'>
+ #include <'./files'>
 
-#include <kernel>
- #include <packages>
- #include <registry>
- #include <c92-192e92acff3-29.c>
- #include <bootlinux.efi>
- #include <ROM>
+  {
+
+  public final string[string, Linux, "cdromLoader"="14.2.7_06.1"];
+  public final string[string, Linux, "version"="0.0.1"];
+  public final string[string, Linux, "build"="0.1"];
+  public final string[string, Linux, "codename"="PreciseCornbase"];
+  public final string[string, Linux, "drivers"="1038"];
+ }
+}
+   {
+    public void LINUX_PCIPROBE(0x0000000000000001);
+    public void LINUX_RAMPROBE(0x0000000000000002);
+    public void LINUX_CHECK(0x0000000000000003); 
+
+     print(errors, messages, other, probing, all);
+}
+
+loadFile("cdrom.rdz")
+ loadFile("kernel.rdz")
