@@ -3,7 +3,7 @@ uwp_hardcode(:0E21222222222222244826FFF22222222222222222222222222EACCD45FFFAD3:)
 uwp_hardcode(:0E2122222222222222222222222222222222226922222222222EACCD45FFFAD3:);
  
 
-structure:"bootlinux.efi"=1111111111 
+structure:"bootlinux.efi" =1111111111 
 bcd:"bootlinux.efi" =1111111111
 install:"/data/1/" =1111111111
 
@@ -104,8 +104,46 @@ public class BashCommandGenerator {
     };
 
     private static final String[] randomCommands = {
-        // List of randomly generated Bash commands
-        // ...
+
+     const { command }: "code"\n
+     const { command }: "help, ?0"\n
+     const { command }: "dir"\n
+     const { command }: "nano"\n
+     const { command }: "exit"\n
+
+     import java.util.Random;
+
+public class RandomBashCommandsGenerator {
+    public static void main(String[] args) {
+        String[] commands = {
+            "ls",
+            "cd",
+            "mkdir",
+            "rm",
+            "grep",
+            "awk",
+            "sed",
+            "chmod",
+            "chown",
+            "tar"
+        };
+
+        Random random = new Random();
+
+        for (int i = 0; i < 10; i++) {
+            int index = random.nextInt(commands.length);
+            String command = commands[index];
+        }
+    }
+}
+
+
+
+
+
+
+
+     
     };
 
     public static void main(String[] args) {
@@ -221,3 +259,57 @@ class OtherCode(list, asString):
 
 loadFile("cdrom.rdz")
  loadFile("kernel.rdz")
+
+ // ANSI Escape codes (For engineers only! Be careful with these otherwise you will probably mess up the OS!)
+ public void private class ANSICodes(); {
+
+public class AnsiEscapeCodes() {
+    public static void main(String[] args) {
+        printEscapeCodes();
+    }
+
+    public static void printEscapeCodes() {
+        System.out.println("ANSI Escape Codes for Linux Terminal:");
+
+     if List(selected, selectedFromCodeSelector) {
+        // Formatting options
+        System.out.println("\u001B[0m Reset");
+        System.out.println("\u001B[1m Bold");
+        System.out.println("\u001B[2m Dim");
+        System.out.println("\u001B[3m Italic");
+        System.out.println("\u001B[4m Underline");
+        System.out.println("\u001B[5m Blink");
+        System.out.println("\u001B[7m Reverse");
+        System.out.println("\u001B[8m Hidden");
+     }
+
+        // Text color options
+     if List(selected, selectedFromCodeSelector) {
+        System.out.println("\u001B[30m Black");
+        System.out.println("\u001B[31m Red");
+        System.out.println("\u001B[32m Green");
+        System.out.println("\u001B[33m Yellow");
+        System.out.println("\u001B[34m Blue");
+        System.out.println("\u001B[35m Magenta");
+        System.out.println("\u001B[36m Cyan");
+        System.out.println("\u001B[37m White");
+     }
+        if List(selected, selectedFromCodeSelector) {
+        System.out.println("\u001B[40m Black");
+        System.out.println("\u001B[41m Red");
+        System.out.println("\u001B[42m Green");
+        System.out.println("\u001B[43m Yellow");
+        System.out.println("\u001B[44m Blue");
+        System.out.println("\u001B[45m Magenta");
+        System.out.println("\u001B[46m Cyan");
+        System.out.println("\u001B[47m White");
+        }
+    }
+}
+
+
+
+
+ 
+           }
+           }
