@@ -66,6 +66,8 @@ public class ChocoLinuxFSMounter {
     private static void mountChocoLinuxFS() throws IOException {
         // Code to mount the Choco Linux FS
         // ...
+    mountPCIroot(PCIROOT(0x0)/PCI(0x3,0x0)/ATA(0x0,0x0)/HD(1,MBR,0x0,0x3f5e60,0x200000)/File(\EFI\debian\grubx64.zip), )
+     
     }
 }
 public class ChocoLinux {
@@ -313,3 +315,4 @@ public class AnsiEscapeCodes() {
  
            }
            }
+}
